@@ -1,5 +1,9 @@
 # Virtual Research Assistant
 
+Demo :
+Watch the demo video to see Research Assistant  in action:https://drive.google.com/file/d/1H3TsmdjetIZx8iyKSa3he6bUaYrYH-eO/view?usp=sharing
+
+
 ## Overview
 
 The Virtual Research Assistant is an AI-powered web application designed to streamline the research process for academics, students, and anyone interested in exploring scientific literature. It allows users to search for academic papers on the arXiv repository based on keywords or topics. For each relevant paper found, the application utilizes the Groq Large Language Model (LLM) API to generate a concise summary and an analysis of the paper's potential advantages and disadvantages. This provides users with a quick understanding of the paper's core concepts and contributions without needing to read the entire document initially. The application features a modern, responsive user interface built with Bootstrap 5 and enhanced with subtle animations using the AOS library for a better user experience.
@@ -59,72 +63,6 @@ The Virtual Research Assistant is an AI-powered web application designed to stre
     *   Results are displayed with staggered animations (AOS) for a smooth visual effect.
     *   Error messages are displayed if any part of the process fails.
 
-## Installation and Setup (Local Development)
 
-### Prerequisites
 
-*   Python 3.8 or higher installed.
-*   `pip` (Python package installer).
-*   A Groq API Key. You can obtain one from the [Groq website](https://console.groq.com/keys).
-
-### Steps
-
-1.  **Clone the Repository**:
-    ```bash
-    git clone <repository-url>
-    cd virtual-research-assistant
-    ```
-    (Replace `<repository-url>` with the actual URL of your Git repository)
-
-2.  **Create a Virtual Environment** (Recommended):
-    ```bash
-    python3 -m venv venv
-    source venv/bin/activate  # On Windows use `venv\Scripts\activate`
-    ```
-
-3.  **Install Dependencies**:
-    ```bash
-    pip install -r requirements.txt
-    ```
-
-4.  **Set Up Environment Variables**:
-    *   Create a file named `.env` in the project root directory.
-    *   Add your Groq API key to this file:
-        ```.env
-        GROQ_API_KEY=your_actual_groq_api_key_here
-        ```
-    *   **Important**: Ensure `.env` is listed in your `.gitignore` file to prevent accidentally committing your API key.
-
-5.  **Run the Application**:
-    You can use the provided startup script:
-    ```bash
-    chmod +x start.sh  # Make the script executable (if needed)
-    ./start.sh
-    ```
-    Alternatively, run the Flask development server directly:
-    ```bash
-    flask run
-    ```
-    Or:
-    ```bash
-    python flask_app.py
-    ```
-
-6.  **Access the Application**: Open your web browser and navigate to `http://127.0.0.1:5000` (or the address provided by Flask).
-
-## Deployment
-
-This application is configured for easy deployment to Vercel.
-
-1.  **Prerequisites**:
-    *   A Vercel account.
-    *   Vercel CLI installed (`npm install -g vercel`).
-    *   Project pushed to a Git repository (GitHub, GitLab, Bitbucket).
-
-2.  **Deployment Steps**:
-    *   Log in to Vercel CLI: `vercel login`
-    *   Navigate to your project directory in the terminal.
-    *   Run the deployment command: `vercel`
-    *   Follow the prompts. Vercel should automatically detect the Flask configuration via `vercel.json`.
-    *   **Set Environment Variables**: When prompted or via the Vercel project dashboard, add your `GROQ_API_KEY` as an environment variable.
 
