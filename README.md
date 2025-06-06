@@ -3,6 +3,8 @@
 Demo :
 Watch the demo video to see Research Assistant  in action:https://drive.google.com/file/d/1H3TsmdjetIZx8iyKSa3he6bUaYrYH-eO/view?usp=sharing
 
+[![Research Assistant Demo](https://img.youtube.com/vi/Kcdu2jNxmME/0.jpg)](https://youtu.be/Kcdu2jNxmME)
+
 
 ## Overview
 
